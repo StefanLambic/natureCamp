@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Fondamento|Nunito:300,400&display=swap");
+:root {
+  --primary: #292f36;
+  --secondary: #68aaa6;
+  --white: #ffff;
+  --lightGray: #e6e1e1;
+  --transition: 0.3s ease;
+  --padding: 80px 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fondamento", cursive;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+/*GRID*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 30px;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  background: var(--secondary);
+  border: 2px solid var(--primary);
+  color: var(--white);
+  font-weight: 400px;
+}
+button:hover {
+  cursor: pointer;
+  background: transparent;
+  color: var(--primary);
+}
+/*HEADER*/
+header {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(37, 37, 35, 0.9),
+      rgba(18, 20, 20, 0.9)
+    ),
+    url(img/9.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 200px 20px;
+}
+header h1 {
+  font-size: 4rem;
+  color: var(--white);
+}
+header p {
+  font-size: 1.3rem;
+  color: var(--white);
+  opacity: 0.6;
+  padding: 20px 0;
+  font-weight: 400px;
+}
+header button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  background: var(--secondary);
+  border: 2px solid var(--primary);
+  color: var(--white);
+  font-weight: 400px;
+}
+header button:hover {
+  background: var(--white);
+  cursor: pointer;
+}
+/*NAVIGATION*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav a {
+  color: var(--primary);
+  text-transform: uppercase;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--secondary);
+}
+.logo {
+  font-size: 2rem;
+}
+/*ABOUT*/
+.about {
+  padding: var(--padding);
+  background: var(--lightGray);
+}
+.about .row {
+  box-shadow: 0 0 20px gray;
+}
+.about .imgLeft {
+  margin-bottom: 60px;
+}
+.about .imgLeft .col-6:nth-child(1) {
+  background-image: url(img/7.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.about .imgLeft .col-6:nth-child(2) {
+  height: 400px;
+  padding: 70px;
+  background: var(--white);
+}
+.about .imgLeft .col-6:nth-child(2) h3,
+.about .imgRight .col-6:nth-child(1) h3 {
+  font-size: 2rem;
+}
+.about .imgLeft .col-6:nth-child(2) p,
+.about .imgRight .col-6:nth-child(1) p {
+  font-size: 1.1rem;
+  padding: 20px 0;
+}
+.about .imgRight {
+  text-align: right;
+}
+.about .imgRight .col-6:nth-child(2) {
+  background-image: url(img/8.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.about .imgRight .col-6:nth-child(1) {
+  background: var(--white);
+  height: 400px;
+  padding: 70px;
+}
+/*GALLERY*/
+.gallery {
+  padding: var(--padding);
+}
+.gallery h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary);
+  padding-bottom: 30px;
+}
+.gallery img {
+  width: 100%;
+  box-shadow: 0 0 20px gray;
+}
+.gallery .col-3 {
+  padding: 30px;
+}
+.gallery button {
+  display: block;
+  margin: auto;
+  color: var(--white);
+}
+.gallery button:hover {
+  color: var(--primary);
+}
+/*FOOTER*/
+footer {
+  background: var(--primary);
+  padding: var(--padding);
+}
+.footer-container {
+  width: 50%;
+  margin: auto;
+}
+footer h2 {
+  color: var(--white);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+footer label,
+footer input,
+footer textarea {
+  display: block;
+  width: 100%;
+  color: var(--white);
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+}
+footer input,
+footer textarea {
+  background: rgba(255, 255, 255, 0.2);
+}
+::placeholder {
+  color: var(--white);
+}
+footer .row:nth-child(3) {
+  text-align: center;
+}
+footer .row:nth-child(3) a {
+  color: rgb(119, 14, 218);
+  background: var(--white);
+  margin: 0 20px;
+  font-size: 2rem;
+  padding: 20px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  border-radius: 50%;
+}
+footer .row:nth-child(3) a i {
+  position: relative;
+  top: -10px;
+}
+
+footer button {
+  margin: 7px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  background: var(--secondary);
+  border: 2px solid transparent;
+  color: var(--white);
+  font-weight: 400px;
+}
+
+footer button:hover {
+  background: var(--white);
+  cursor: pointer;
+}
