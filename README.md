@@ -1,2 +1,3 @@
-# natureCamp
-Static website built using HTML &amp; CSS. 
+- The name of this project is natureCamp.
+- It's a single page static website, on which travelers can find all the informations (including contact form) about "Nature Camp" which is an imaginary touristic place for all generations to enjoy in the wild with experienced hosts providing them service.
+- The whole project was built using exclusively HTML5 and CSS3.
